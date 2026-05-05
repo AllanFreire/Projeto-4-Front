@@ -1,0 +1,16 @@
+:root{
+    --color1:#f0f0f0;
+    --color2:#333;
+    --color3:#555;
+    --colorLinear: linear-gradient(purple,aqua);
+    --fontFamily:"Cascadia Code", sans-serif;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizin:border-box;
+}
+body{
+    background:var(--color1);
+    font-family:var(--fontFamily);
+}
