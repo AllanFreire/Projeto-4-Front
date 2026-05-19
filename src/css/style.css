@@ -103,6 +103,24 @@ header nav ul li a:hover{
     text-transform:uppercase;/*deixa o texto maiuscúlo*/
 
 }
+/* Menu Hamburguer */
+.menu-hamburguer{
+    display:none;
+    flex-direction:column;
+    justify-content:space-around;
+    width:30px;
+    height:25px;
+    cursor:pointer;
+    z-index:1001;
+}
+.menu-hamburguer span{
+    width:100%;
+    height:3px;
+    background:var(--color1);
+    border-radius:10px;
+}
+
+
 .cor{
     width:30px;
     height:30px;
@@ -120,3 +138,27 @@ header nav ul li a:hover{
     background-clip:text;
 }
 
+/* Responsividade Menu Hamburguer */
+
+@media (max-width:768px){
+    .menu-hamburguer{
+        display:flex;
+
+    }
+    nav{
+        display:none;
+        position:absolute;
+        top:80px;
+        left:0;
+        background:var(--color2);
+        flex-direction:column;
+        padding:20px 0;
+    }
+    nav.active{
+        display:block;
+    }
+    nav ul{
+        dlex-direction:column;
+        text-align:center;
+    }
+}
